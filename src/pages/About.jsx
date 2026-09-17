@@ -2,24 +2,26 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ShieldCheck, Heart, Award, Users, CheckCircle, ArrowRight } from "lucide-react";
 import Navbar from "../components/Navbar";
-import UserAvatar from "../components/UserAvatar";
 
 export default function About() {
   const leadership = [
     {
       name: "Dr. Arun Kumar, MD, DM",
       role: "Chief Medical Officer & Co-Founder",
-      bio: "Cardiologist with 18+ years in acute care telemetry and clinical decision support systems."
+      bio: "Cardiologist with 18+ years in acute care telemetry and clinical decision support systems.",
+      avatar: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=150&auto=format&fit=crop&q=80"
     },
     {
       name: "Sowmya Krishnan",
       role: "Head of Remote Clinical Operations",
-      bio: "Specializes in healthcare delegate workflows, community triage, and patient engagement."
+      bio: "Specializes in healthcare delegate workflows, community triage, and patient engagement.",
+      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80"
     },
     {
       name: "Dr. V. Ramanathan",
       role: "Director of Digital Health & Architecture",
-      bio: "Senior health informatics engineer specializing in IoT telemetry ingestion pipelines."
+      bio: "Senior health informatics engineer specializing in IoT telemetry ingestion pipelines.",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80"
     }
   ];
 
@@ -84,12 +86,10 @@ export default function About() {
                 key={idx}
                 className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800 p-6 text-center shadow-sm"
               >
-                <UserAvatar
-                  name={member.name}
-                  role={member.role}
-                  size="xl"
-                  showIcon={true}
-                  className="mx-auto mb-4 border-2 border-sky-500/20"
+                <img
+                  src={member.avatar}
+                  alt={member.name}
+                  className="w-20 h-20 rounded-full mx-auto object-cover border-2 border-sky-500/20 mb-4"
                 />
                 <h4 className="text-base font-bold text-slate-900 dark:text-white">
                   {member.name}

@@ -3,7 +3,6 @@ import { UserCheck, Search, Phone, Mail, Star, MapPin, Calendar, MessageSquare, 
 import { useData } from "../context/DataContext";
 import { useToast } from "../context/ToastContext";
 import Modal from "../components/Modal";
-import UserAvatar from "../components/UserAvatar";
 
 export default function Doctors() {
   const { doctors, addDoctor } = useData();
@@ -118,12 +117,10 @@ export default function Doctors() {
             <div>
               <div className="flex items-start justify-between gap-3">
                 <div className="flex items-center gap-3">
-                  <UserAvatar
-                    name={doc.name}
-                    role={doc.specialty}
-                    size="lg"
-                    showIcon={true}
-                    className="border border-slate-200 dark:border-slate-700"
+                  <img
+                    src={doc.avatar}
+                    alt={doc.name}
+                    className="w-14 h-14 rounded-2xl object-cover border border-slate-200 dark:border-slate-700"
                   />
                   <div>
                     <h3 className="text-base font-bold text-slate-900 dark:text-white">

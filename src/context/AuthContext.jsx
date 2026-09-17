@@ -41,7 +41,8 @@ export const AuthProvider = ({ children }) => {
         role,
         rolePath: role === "Doctor" ? "/doctor-dashboard" : role === "Administrator" ? "/admin-dashboard" : "/dashboard",
         location: "Regional Telemetry Hub",
-        phone: "+91 90000 00000"
+        phone: "+91 90000 00000",
+        avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80"
       };
       setCurrentUser(user);
       saveSession(user);

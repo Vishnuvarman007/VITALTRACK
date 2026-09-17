@@ -19,7 +19,6 @@ import {
 } from "lucide-react";
 import { useAuth } from "../context/AuthContext";
 import { useToast } from "../context/ToastContext";
-import UserAvatar from "./UserAvatar";
 
 export default function Sidebar({ isOpen, onClose }) {
   const location = useLocation();
@@ -171,10 +170,10 @@ export default function Sidebar({ isOpen, onClose }) {
             onClick={onClose}
             className="flex items-center gap-3 p-2 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
           >
-            <UserAvatar
-              name={currentUser?.name || "User"}
-              role={role}
-              size="md"
+            <img
+              src={currentUser?.avatar || "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80"}
+              alt={currentUser?.name || "User"}
+              className="w-9 h-9 rounded-full object-cover border border-slate-200 dark:border-slate-700"
             />
             <div className="min-w-0 flex-1">
               <p className="text-xs font-bold text-slate-900 dark:text-white truncate">

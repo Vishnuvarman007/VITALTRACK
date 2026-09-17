@@ -12,6 +12,7 @@ export const INITIAL_DOCTORS = [
     rating: 4.9,
     experienceYears: 18,
     status: "Available",
+    avatar: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=150&auto=format&fit=crop&q=80",
     bio: "Senior Interventional Cardiologist specializing in remote hemodynamic telemetry, heart failure management, and hypertensive crisis triage."
   },
   {
@@ -27,6 +28,7 @@ export const INITIAL_DOCTORS = [
     rating: 4.8,
     experienceYears: 14,
     status: "In Consultation",
+    avatar: "https://images.unsplash.com/photo-1594824813512-c2e742111d4e?w=150&auto=format&fit=crop&q=80",
     bio: "Expert in complex Type 2 Diabetes, continuous glucose monitoring (CGM) analytics, and gestational endocrine disorders."
   },
   {
@@ -42,6 +44,7 @@ export const INITIAL_DOCTORS = [
     rating: 4.9,
     experienceYears: 16,
     status: "Available",
+    avatar: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=150&auto=format&fit=crop&q=80",
     bio: "Specialist in chronic respiratory disease management, nocturnal pulse oximetry, and non-invasive ventilation follow-ups."
   },
   {
@@ -57,6 +60,7 @@ export const INITIAL_DOCTORS = [
     rating: 4.7,
     experienceYears: 12,
     status: "Available",
+    avatar: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&auto=format&fit=crop&q=80",
     bio: "Focuses on refractory nutritional anemias, hemoglobinopathies, and therapeutic monitoring of iron-deficient patient cohorts."
   },
   {
@@ -72,6 +76,7 @@ export const INITIAL_DOCTORS = [
     rating: 4.9,
     experienceYears: 22,
     status: "In Round",
+    avatar: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=150&auto=format&fit=crop&q=80",
     bio: "Specializes in multi-morbidity elder care, polypharmacy reconciliation, and tele-geriatric risk monitoring."
   },
   {
@@ -87,6 +92,7 @@ export const INITIAL_DOCTORS = [
     rating: 4.8,
     experienceYears: 11,
     status: "Available",
+    avatar: "https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=150&auto=format&fit=crop&q=80",
     bio: "Dedicated to diabetic kidney disease slowing, cardiorenal protection, and electrolyte balance tracking."
   },
   {
@@ -102,6 +108,7 @@ export const INITIAL_DOCTORS = [
     rating: 4.8,
     experienceYears: 15,
     status: "Available",
+    avatar: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=150&auto=format&fit=crop&q=80",
     bio: "Pioneer in wearable ECG surveillance, preventive cardiology, and post-infarction remote rehabilitation."
   },
   {
@@ -117,6 +124,7 @@ export const INITIAL_DOCTORS = [
     rating: 4.9,
     experienceYears: 13,
     status: "In Surgery",
+    avatar: "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=150&auto=format&fit=crop&q=80",
     bio: "High-risk pregnancy monitoring, gestational diabetes protocol management, and fetal wellbeing telemetry."
   },
   {
@@ -132,6 +140,7 @@ export const INITIAL_DOCTORS = [
     rating: 4.7,
     experienceYears: 19,
     status: "Available",
+    avatar: "https://images.unsplash.com/photo-1622902046580-2b47f47f5471?w=150&auto=format&fit=crop&q=80",
     bio: "Neurovascular stroke prevention, autonomic neuropathy in long-standing diabetes, and sleep telemetry."
   },
   {
@@ -147,6 +156,7 @@ export const INITIAL_DOCTORS = [
     rating: 4.8,
     experienceYears: 10,
     status: "Available",
+    avatar: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&auto=format&fit=crop&q=80",
     bio: "Preventive lifestyle medicine, chronic disease reversal coaching, and remote biomarker trend analysis."
   }
 ];

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { User, Mail, Phone, MapPin, Shield, Key, LogOut, CheckCircle2, Save } from "lucide-react";
 import { useAuth } from "../context/AuthContext";
 import { useToast } from "../context/ToastContext";
-import UserAvatar from "../components/UserAvatar";
 
 export default function Profile() {
   const { currentUser, logout } = useAuth();
@@ -42,12 +41,10 @@ export default function Profile() {
 
       {/* Profile Overview Card */}
       <div className="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm flex flex-col sm:flex-row items-center gap-6">
-        <UserAvatar
-          name={name}
-          role={currentUser?.role || "Healthcare Delegate"}
-          size="xl"
-          showIcon={true}
-          className="border-4 border-sky-500/20 shadow-lg"
+        <img
+          src={currentUser?.avatar || "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80"}
+          alt="Avatar"
+          className="w-20 h-20 rounded-full object-cover border-4 border-sky-500/20 shadow-md"
         />
         <div className="text-center sm:text-left space-y-1">
           <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
