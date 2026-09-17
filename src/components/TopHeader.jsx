@@ -18,6 +18,7 @@ import { useLanguage, SUPPORTED_LANGUAGES } from "../context/LanguageContext";
 import { useAuth } from "../context/AuthContext";
 import NotificationPanel from "./NotificationPanel";
 import { useToast } from "../context/ToastContext";
+import UserAvatar from "./UserAvatar";
 
 export default function TopHeader({ onToggleSidebar, onSearchQuery, searchQuery }) {
   const [langDropdown, setLangDropdown] = useState(false);
@@ -162,10 +163,10 @@ export default function TopHeader({ onToggleSidebar, onSearchQuery, searchQuery 
             onClick={() => setProfileDropdown(!profileDropdown)}
             className="flex items-center gap-2 p-1 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
           >
-            <img
-              src={currentUser?.avatar || "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80"}
-              alt="Profile"
-              className="w-8 h-8 rounded-full object-cover border border-slate-200 dark:border-slate-700"
+            <UserAvatar
+              name={currentUser?.name || "User"}
+              role={currentUser?.role}
+              size="sm"
             />
             <ChevronDown className="w-3.5 h-3.5 text-slate-400 hidden sm:block" />
           </button>

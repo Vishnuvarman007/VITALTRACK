@@ -162,8 +162,7 @@ export const DataProvider = ({ children }) => {
       criticalCount: 0,
       rating: 5.0,
       experienceYears: Number(docData.experienceYears) || 5,
-      status: "Available",
-      avatar: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=150&auto=format&fit=crop&q=80"
+      status: "Available"
     };
     setDoctors((prev) => [created, ...prev]);
     return created;
