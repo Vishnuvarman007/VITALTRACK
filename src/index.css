@@ -8,6 +8,16 @@
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
 
+  body {
+    background-color: #ffffff;
+    color: #0f172a;
+  }
+
+  .dark body {
+    background-color: #020617;
+    color: #f8fafc;
+  }
+
   /* Custom subtle scrollbar */
   ::-webkit-scrollbar {
     width: 6px;

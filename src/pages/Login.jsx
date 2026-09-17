@@ -49,7 +49,7 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex items-center justify-center p-4 selection:bg-sky-500 selection:text-white">
+    <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex items-center justify-center p-4 selection:bg-sky-500 selection:text-white">
       <div className="w-full max-w-5xl rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 min-h-[620px]">
         {/* Left: VITALTRACK Branding & Healthcare Visualizer */}
         <div className="lg:col-span-6 bg-gradient-to-br from-sky-600 via-sky-700 to-teal-800 text-white p-8 sm:p-12 flex flex-col justify-between relative overflow-hidden">

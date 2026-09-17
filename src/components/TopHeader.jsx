@@ -11,7 +11,8 @@ import {
   LogOut,
   ChevronDown,
   Activity,
-  Layers
+  Layers,
+  Sparkles
 } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
 import { useLanguage, SUPPORTED_LANGUAGES } from "../context/LanguageContext";
@@ -70,6 +71,15 @@ export default function TopHeader({ onToggleSidebar, onSearchQuery, searchQuery 
 
       {/* Right: Actions */}
       <div className="flex items-center gap-2 sm:gap-3">
+        <Link
+          to="/features"
+          className="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-sky-50 hover:bg-sky-100 dark:bg-sky-950/40 dark:hover:bg-sky-900/60 border border-sky-200 dark:border-sky-800 text-xs font-bold text-sky-700 dark:text-sky-300 transition-colors shadow-xs"
+          title="Explore All 14 Platform Features"
+        >
+          <Sparkles className="w-3.5 h-3.5 text-sky-500 animate-pulse" />
+          <span>Features</span>
+        </Link>
+
         {/* Role Switcher (Convenient demo tool for review) */}
         <div className="relative">
           <button

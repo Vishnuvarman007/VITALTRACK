@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   TrendingUp,
   Sparkles,
@@ -47,6 +48,30 @@ export default function HealthTrends() {
         <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
           Longitudinal trajectory analysis and early warning indicators across the monitored patient population.
         </p>
+      </div>
+
+      {/* Navigation Quick Switch Banner */}
+      <div className="flex flex-wrap items-center justify-between gap-3 p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-xs text-xs">
+        <div className="flex items-center gap-2 text-slate-700 dark:text-slate-300">
+          <Info className="w-4 h-4 text-sky-600 flex-shrink-0" />
+          <span>You are viewing the <strong>AI Health Trends & Risk Analytics</strong> module. Looking for the public website or platform features?</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <Link
+            to="/features"
+            className="px-3.5 py-1.5 rounded-xl bg-sky-50 hover:bg-sky-100 dark:bg-sky-950/60 dark:hover:bg-sky-900/60 border border-sky-200 dark:border-sky-800 font-bold text-sky-700 dark:text-sky-300 text-xs shadow-xs inline-flex items-center gap-1.5 transition-colors"
+          >
+            <Sparkles className="w-3.5 h-3.5 text-sky-600" />
+            <span>View All 14 Features</span>
+          </Link>
+          <Link
+            to="/"
+            className="px-3.5 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 dark:bg-slate-100 dark:hover:bg-white font-bold text-white dark:text-slate-900 text-xs shadow-xs inline-flex items-center gap-1.5 transition-colors"
+          >
+            <span>Public Home Page</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
+        </div>
       </div>
 
       {/* Highlighted AI Cohort Risk Card */}

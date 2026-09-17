@@ -15,7 +15,9 @@ import {
   Radio,
   Calendar,
   Cpu,
-  UserPlus
+  UserPlus,
+  Sparkles,
+  Home
 } from "lucide-react";
 import { useAuth } from "../context/AuthContext";
 import { useToast } from "../context/ToastContext";
@@ -39,32 +41,37 @@ export default function Sidebar({ isOpen, onClose }) {
     if (role === "Doctor") {
       return [
         { label: "Dashboard", path: "/doctor-dashboard", icon: LayoutDashboard },
+        { label: "Platform Features", path: "/features", icon: Sparkles },
         { label: "My Patients", path: "/doctor/patients", icon: Users },
         { label: "Appointments", path: "/doctor/appointments", icon: Calendar },
         { label: "Clinical Alerts", path: "/doctor/alerts", icon: AlertOctagon, badge: "4" },
         { label: "Health Reports", path: "/reports", icon: FileText },
         { label: "AI Assistant", path: "/assistant", icon: Bot },
         { label: "Notifications", path: "/notifications", icon: Bell },
-        { label: "Settings", path: "/settings", icon: Settings }
+        { label: "Settings", path: "/settings", icon: Settings },
+        { label: "Public Website", path: "/", icon: Home }
       ];
     }
 
     if (role === "Administrator") {
       return [
         { label: "Admin Dashboard", path: "/admin-dashboard", icon: LayoutDashboard },
+        { label: "Platform Features", path: "/features", icon: Sparkles },
         { label: "User Management", path: "/admin/users", icon: Users },
         { label: "Patient Directory", path: "/admin/patients", icon: UserPlus },
         { label: "Doctor Roster", path: "/admin/doctors", icon: UserCheck },
         { label: "IoT Telemetry Devices", path: "/admin/devices", icon: Cpu, badge: "16" },
         { label: "System Alerts", path: "/admin/alerts", icon: AlertOctagon },
         { label: "Privacy & Consent", path: "/privacy", icon: Shield },
-        { label: "Settings", path: "/settings", icon: Settings }
+        { label: "Settings", path: "/settings", icon: Settings },
+        { label: "Public Website", path: "/", icon: Home }
       ];
     }
 
     // Default: Healthcare Delegate
     return [
       { label: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
+      { label: "Platform Features", path: "/features", icon: Sparkles },
       { label: "Patients", path: "/patients", icon: Users },
       { label: "Critical Alerts", path: "/alerts", icon: AlertOctagon, badge: "7" },
       { label: "Health Trends", path: "/health-trends", icon: TrendingUp },
@@ -73,7 +80,8 @@ export default function Sidebar({ isOpen, onClose }) {
       { label: "AI Assistant", path: "/assistant", icon: Bot },
       { label: "Notifications", path: "/notifications", icon: Bell },
       { label: "Privacy & Consent", path: "/privacy", icon: Shield },
-      { label: "Settings", path: "/settings", icon: Settings }
+      { label: "Settings", path: "/settings", icon: Settings },
+      { label: "Public Website", path: "/", icon: Home }
     ];
   };
 
@@ -164,7 +172,7 @@ export default function Sidebar({ isOpen, onClose }) {
         </div>
 
         {/* Bottom Profile & Logout Bar */}
-        <div className="p-4 border-t border-slate-100 dark:border-slate-800 space-y-2 bg-slate-50/50 dark:bg-slate-800/30">
+        <div className="p-4 border-t border-slate-100 dark:border-slate-800 space-y-2 bg-white dark:bg-slate-900">
           <Link
             to="/profile"
             onClick={onClose}
